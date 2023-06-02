@@ -23,6 +23,8 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
     22, 23, 24, 25,
   ];
 
+  if (error) return null;
+
   return (
     <>
       <Heading fontSize={"2xl"} marginBottom={3}>
